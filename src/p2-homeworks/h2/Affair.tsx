@@ -1,11 +1,10 @@
 import React from 'react'
+import s from './Affairs.module.css'
 import {AffairType} from "./HW2";
-import affairs from "./Affairs";
 
 type AffairPropsType = {
-    // key не нужно типизировать
-    affair: AffairType // need to fix any
-    deleteAffairCallback: (_id: number) => void // need to fix any
+    affair: AffairType
+    deleteAffairCallback: (_id: number) => void
 }
 
 function Affair(props: AffairPropsType) {
@@ -13,11 +12,15 @@ function Affair(props: AffairPropsType) {
         props.deleteAffairCallback(props.affair._id)
     }
 
+    let priority_color = s.priority_low;
+    if (props.affair.priority === 'middle') priority_color = s.priority_middle
+    if (props.affair.priority === 'high') priority_color = s.priority_high
+
     return (
-        <div>
+        <div className={s.item}>
             <span>{props.affair.name}</span>
-            <span>        {props.affair.priority}      </span>
-            <button onClick={deleteCallback}>X</button>
+            <span className={`${s.priority} ${priority_color}`}>{props.affair.priority}</span>
+            <button className={s.btn} onClick={deleteCallback}><span></span><span></span></button>
         </div>
     )
 }

@@ -4,26 +4,26 @@ import {v1} from "uuid";
 
 // types
 export type UserType = {
-    _id: string // need to fix any
-    name: string // need to fix any
+    _id: string
+    name: string
 }
 
 // уровень работы с глобальными данными
 function HW3() {
-    const [users, setUsers] = useState<UserType[]>([]) // need to fix any
+    const [users, setUsers] = useState<UserType[]>([])
 
-    const addUserCallback = (name: string) => { // need to fix any
-        setUsers([...users, {_id: v1(),name: name}]) // need to fix
+    const addUserCallback = (name: string) => {
+        setUsers([...users, {_id: v1(), name: name}])
     }
 
     return (
         <div>
             <hr/>
             <div className="container">
-            <div className="title">homeworks 3</div>
+                <div className="title">homeworks 3</div>
 
-            {/*should work (должно работать)*/}
-            <GreetingContainer users={users} addUserCallback={addUserCallback}/>
+                {/*should work (должно работать)*/}
+                <GreetingContainer users={users} addUserCallback={addUserCallback}/>
             </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}

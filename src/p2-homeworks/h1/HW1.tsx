@@ -13,21 +13,25 @@ function HW1() {
     return (
         <div>
             <hr/>
-            homeworks 1
+            <div className="container">
 
-            {/*should work (должно работать)*/}
+                <div className="title">homeworks 1</div>
+                {/*should work (должно работать)*/}
+                <div className="title title_purple">Message example</div>
+                <Message
+                    avatar={messageData.avatar}
+                    name={messageData.name}
+                    message={messageData.message}
+                    time={messageData.time}
+                />
 
-            <Message
-                avatar={messageData.avatar}
-                name={messageData.name}
-                message={messageData.message}
-                time={messageData.time}
-            />
+            </div>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}
             <hr/>
+
         </div>
     )
 }

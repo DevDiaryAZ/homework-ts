@@ -7,6 +7,7 @@
     background: #1a9e41;
     padding: 4px 6px 4px 80px;
     margin: 20px;
+    margin-left: 0;
 }
 
 .message__imageContainer {

@@ -18,12 +18,12 @@ const Greeting: React.FC<GreetingPropsType> = (
     return (
         <div className={s.container}>
             <div>
-                <input value={name} onChange={(e) => setNameCallback(e)} onKeyDown={(event) => setNameCallback(event)} className={inputClass}/>
+                <input value={name} onChange={(e) => setNameCallback(e)} onKeyDown={(event) => setNameCallback(event)} className={inputClass} placeholder="Enter a name..."/>
                 <span className={s.errorMessage}>{error}</span>
                 <button className={s.btn} onClick={addUser}>add</button>
             </div>
             <div className={s.totalUsers}>
-                <div>total users</div>
+                <div>total<br/> users</div>
                 <div>{totalUsers}</div>
             </div>
         </div>

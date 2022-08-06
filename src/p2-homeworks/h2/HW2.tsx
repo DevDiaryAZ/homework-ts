@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import s from './Affairs.module.css'
 import Affairs from './Affairs'
 
 // types
@@ -40,14 +41,18 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
+            <div className="container">
+                <div className="title">homeworks 2</div>
 
-            {/*should work (должно работать)*/}
-            <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
-            />
+                {/*should work (должно работать)*/}
+                <div className="title title_purple">Mini todolist</div>
+                <Affairs
+                    data={filteredAffairs}
+                    setFilter={setFilter}
+                    deleteAffairCallback={deleteAffairCallback}
+                />
+            </div>
+
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
