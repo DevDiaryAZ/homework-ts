@@ -17,7 +17,7 @@ function HW1() {
 
                 <div className="title">homeworks 1</div>
                 {/*should work (должно работать)*/}
-                <div className="title title_purple">Message example</div>
+                <div className="title title_purple">Message component example</div>
                 <Message
                     avatar={messageData.avatar}
                     name={messageData.name}

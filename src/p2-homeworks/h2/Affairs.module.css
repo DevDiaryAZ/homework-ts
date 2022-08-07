@@ -101,7 +101,6 @@ display: flex;
     -webkit-appearance: button;
     font-size: 14px;
     font-weight: 500;
-    /*color: #91699c;*/
     border: 1px solid #000;
     border-radius: 8px;
     background: #fff;
@@ -116,7 +115,7 @@ display: flex;
 }
 
 .btnFilter.active{
-    border: 1px solid #91699c;
+    border: 2px solid #91699c;
     color: #91699c;
 }
 

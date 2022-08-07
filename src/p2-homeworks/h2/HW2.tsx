@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import s from './Affairs.module.css'
 import Affairs from './Affairs'
 
 // types
@@ -8,13 +7,13 @@ export type AffairPriorityType = "high" | "middle" | "low";
 export type AffairType = {
     _id: number
     name: string
-    priority: string
+    priority: AffairPriorityType
 };
-// need to fix any
+
 export type FilterType = 'all' | AffairPriorityType
 
 // constants
-const defaultAffairs: AffairType[] = [ // need to fix any
+const defaultAffairs: AffairType[] = [
     {_id: 1, name: 'React', priority: 'high'},
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
@@ -25,18 +24,18 @@ const defaultAffairs: AffairType[] = [ // need to fix any
 // pure helper functions
 export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => {
     if (filter === 'all') return affairs
-    else return affairs.filter(el => el.priority === filter ? el : null)  // need to fix
+    else return affairs.filter(el => el.priority === filter ? el : null)
 }
-export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need
+export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => {
     return affairs.filter(el => el._id !== _id ? el : null)
 }
 
 function HW2() {
-    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs) // need to fix any
+    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs)
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
-    const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id)) // need to fix any
+    const deleteAffairCallback = (_id: number) => setAffairs(deleteAffair(affairs, _id))
 
     return (
         <div>
@@ -50,6 +49,7 @@ function HW2() {
                     data={filteredAffairs}
                     setFilter={setFilter}
                     deleteAffairCallback={deleteAffairCallback}
+                    filter = {filter}
                 />
             </div>
 
