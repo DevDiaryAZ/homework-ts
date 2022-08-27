@@ -1,5 +1,82 @@
 .checkbox {
+}
+/* The container */
+.labelCheckbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.2s ease;
+    margin-right: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
 
+/* Hide the browser's default checkbox */
+.labelCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkboxTick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* On mouse-over */
+.labelCheckbox:hover input ~ .checkboxTick {
+    background-color: rgba(0,119,255,0.06);
+    border-color: #07f;
+}
+
+/* When the checkbox is checked */
+.labelCheckbox input:checked ~ .checkboxTick {
+    background-color: #07f;
+    border-color: #07f;
+}
+
+/* The "tick" (hidden when not checked) */
+.checkboxTick:after {
+    content: "";
+    position: absolute;
+    display: none;
+    transition: all 0.2s ease;
+}
+
+/* Show the tick when checked */
+.labelCheckbox input:checked ~ .checkboxTick:after {
+    display: block;
+}
+
+/* Style the tick */
+.labelCheckbox .checkboxTick:after {
+    left: 0;
+    top: -4px;
+    right: 0;
+    bottom: 0;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin:auto;
 }
 
 .spanClassName {

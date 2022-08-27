@@ -1,12 +1,25 @@
-.superInput {
 
+input{
+}
+
+.superInput {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid red;
+    margin-bottom: 5px;
 }
 
 .error {
     color: red;
+    margin-bottom: 10px;
+}
+
+.blue{
+    color: green;
 }

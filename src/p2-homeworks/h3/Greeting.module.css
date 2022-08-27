@@ -1,17 +1,6 @@
 .input {
-    margin: 0;
-    font-family: inherit;
-    line-height: inherit;
-    font-size: 14px;
-    font-weight: 400;
-    color: #545454;
     width: 100%;
     max-width: 500px;
-    height: 40px;
-    padding: 0 16px;
-    background: #fff;
-    border-radius: 8px;
-    box-sizing: border-box;
 }
 
 .container {
@@ -24,47 +13,52 @@
 }
 
 .someClass {
-    border: 1px solid #eeeeee;
+    border: 1px solid #C1C1C1;
 }
 
 .error {
     border: 1px solid red;
 }
+.btnContainer{
+    width: 100%;
+    margin: auto;
+}
 
 .btn {
-    margin: 0;
-    font-family: inherit;
-    line-height: inherit;
-    text-transform: none;
-    -webkit-appearance: button;
-    font-size: 14px;
-    font-weight: 500;
-    color: #91699c;
-    border: 2px solid #91699c;
-    border-radius: 8px;
-    background: #fff;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
     display: block;
-    padding: 8px;
-    max-height: 40px;
-    cursor: pointer;
+    max-width: 500px;
+    min-width: 100px;
     margin-top: 10px;
+    margin-right: 5px;
+    background: #8f5fe8;
+    border-color: #8f5fe8;
 }
 
 .btn:hover {
-    background: #91699c;
-    color: #fff;
+    background: #783ee3;
+    border-color: #7032e2;
+}
+
+.btn:disabled:hover {
+    background: rgba(228, 234, 236);
+    border-color: rgba(228, 234, 236);
+}
+
+.btn:disabled {
+    background: rgba(228, 234, 236);
+    border-color: rgba(228, 234, 236);
+    cursor: unset;
 }
 
 .totalUsers {
     text-align: center;
     width: 100px;
-    padding: 0 20px 0;
     justify-content: center;
     align-items: center;
     display: flex;
+    border: 1px solid #91699c;
+    padding: 0 20px;
+    margin: 0 20px;
 }
 
 .totalUsers div {
@@ -79,6 +73,7 @@
     font-weight: 600;
     margin-bottom: 5px;
     color: #231f20;
+    margin-left: 10px;
 }
 
 .errorMessage {

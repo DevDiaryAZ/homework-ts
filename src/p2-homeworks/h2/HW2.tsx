@@ -39,7 +39,7 @@ function HW2() {
 
     return (
         <div>
-            <hr/>
+            {/*<hr/>*/}
             <div className="container">
                 <div className="title">homeworks 2</div>
 
@@ -54,10 +54,10 @@ function HW2() {
             </div>
 
 
-            <hr/>
+            {/*<hr/>*/}
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
-            <hr/>
+            {/*<hr/>*/}
         </div>
     )
 }

@@ -12,7 +12,7 @@ const messageData = {
 function HW1() {
     return (
         <div>
-            <hr/>
+            {/*<hr/>*/}
             <div className="container">
 
                 <div className="title">homeworks 1</div>
@@ -27,10 +27,10 @@ function HW1() {
 
             </div>
 
-            <hr/>
+            {/*<hr/>*/}
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}
-            <hr/>
+            {/*<hr/>*/}
 
         </div>
     )

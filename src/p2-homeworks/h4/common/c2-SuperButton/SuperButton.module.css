@@ -1,7 +1,41 @@
 .default {
+    display: block;
+    max-width: 500px;
+    min-width: 100px;
+    margin-top: 10px;
+    margin-right: 5px;
+    background: #8f5fe8;
+    border-color: #8f5fe8;
+}
 
+.default:hover {
+    background: #783ee3;
+    border-color: #7032e2;
+}
+
+.default:disabled {
+    background: rgba(228, 234, 236);
+    border-color: rgba(228, 234, 236);
+    cursor: unset;
+}
+
+.default:disabled:hover {
+    background: rgba(228, 234, 236);
+    border-color: rgba(228, 234, 236);
 }
 
 .red {
-    background: red;
+    display: block;
+    max-width: 500px;
+    min-width: 100px;
+    margin-top: 10px;
+    margin-right: 5px;
+    background: #fc424a;
+    border-color: #fc424a;
 }
+
+.red:hover {
+    background: #fb1c26;
+    border-color: #fb101a;
+}
+
