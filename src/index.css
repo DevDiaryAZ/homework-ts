@@ -13,10 +13,14 @@ code {
 }
 
 .container {
-    max-width: 500px;
     overflow: hidden;
     border-bottom: 1px solid #eee;
     padding: 30px 15px;
+}
+
+.h5_container {
+    overflow: hidden;
+    padding: 30px 15px 0;
 }
 
 .title {
@@ -62,4 +66,9 @@ input{
     border-radius: 2px;
     color: #545454;
     box-sizing: border-box;
+}
+
+.superSpan{
+    background:  no-repeat 10px/15px url("https://www.svgrepo.com/show/42233/pencil-edit-button.svg");
+    padding-left: 30px;
 }

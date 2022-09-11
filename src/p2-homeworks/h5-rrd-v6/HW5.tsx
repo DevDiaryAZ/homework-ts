@@ -6,15 +6,15 @@ import {HashRouter} from "react-router-dom";
 function HW5() {
     return (
         <div>
-            <div className="container">
-            {/*в gh-pages лучше работает HashRouter*/}
-            <HashRouter>
+            <div className="h5_container">
+                {/*в gh-pages лучше работает HashRouter*/}
+                <HashRouter>
 
-            <Header/>
+                    <Header/>
 
-            <Pages/>
+                    <Pages/>
 
-            </HashRouter>
+                </HashRouter>
             </div>
         </div>
     )

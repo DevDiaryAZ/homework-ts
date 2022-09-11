@@ -9,31 +9,35 @@ function HW7() {
 
     return (
         <div>
-            <hr/>
-            homeworks 7
+            <div className="container">
+                {/*<hr/>*/}
+                <div className="title">homeworks 7</div>
+                <div className="title title_purple">Universal select and checkbox</div>
+                {/*<hr/>*/}
 
-            {/*should work (должно работать)*/}
-            <div>
-                <SuperSelect
-                    options={arr}
-                    value={value}
-                    onChangeOption={onChangeOption}
-                />
-            </div>
-            <div>
-                <SuperRadio
-                    name={'radio'}
-                    options={arr}
-                    value={value}
-                    onChangeOption={onChangeOption}
-                />
-            </div>
+                {/*should work (должно работать)*/}
+                <div>
+                    <SuperSelect
+                        options={arr}
+                        value={value}
+                        onChangeOption={onChangeOption}
+                    />
+                </div>
+                <div>
+                    <SuperRadio
+                        name={'radio'}
+                        options={arr}
+                        value={value}
+                        onChangeOption={onChangeOption}
+                    />
+                </div>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperSelect/>*/}
-            {/*<AlternativeSuperRadio/>*/}
-            <hr/>
+                {/*<hr/>*/}
+                {/*для личного творчества, могу проверить*/}
+                {/*<AlternativeSuperSelect/>*/}
+                {/*<AlternativeSuperRadio/>*/}
+                {/*<hr/>*/}
+            </div>
         </div>
     )
 }

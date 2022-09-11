@@ -1,6 +1,5 @@
 .input {
     width: 100%;
-    max-width: 500px;
 }
 
 .container {
@@ -9,7 +8,6 @@
 
 .container div:nth-child(1) {
     width: 100%;
-    max-width: 500px;
 }
 
 .someClass {
