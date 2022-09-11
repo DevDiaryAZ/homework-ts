@@ -28,6 +28,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
                 value={option}
                 checked={value === option}
                 onChange={onChangeCallback}
+                {...restProps}
             />
             {option}
         </label>

@@ -10,7 +10,6 @@ function HW7() {
     return (
         <div>
             <div className="container">
-                {/*<hr/>*/}
                 <div className="title">homeworks 7</div>
                 <div className="title title_purple">Universal select and checkbox</div>
                 {/*<hr/>*/}
