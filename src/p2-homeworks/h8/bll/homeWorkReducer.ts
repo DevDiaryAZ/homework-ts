@@ -12,8 +12,8 @@ export const homeWorkReducer = (state: Array<UserType>, action: ActionType): Arr
     switch (action.type) {
         case 'sort': {
             const newState = [...state].sort((a: UserType, b: UserType) => {
-                    if (a.name < b.name) return 1
-                    else if (a.name > b.name) return -1
+                    if (a.name > b.name) return 1
+                    else if (a.name < b.name) return -1
                     else return 0
                 }
             )

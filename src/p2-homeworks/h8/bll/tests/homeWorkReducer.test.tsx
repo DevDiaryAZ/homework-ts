@@ -18,6 +18,7 @@ beforeEach(() => {
 
 test('sort name up', () => {
     const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'up'})
+
     //если по годам сортировать
     // expect(newState[0]._id).toBe(0)
     // expect(newState[0].name).toBe('Кот')
@@ -26,7 +27,7 @@ test('sort name up', () => {
     // expect(newState[5].name).toBe('Александр')
     // expect(newState[5].age).toBe(66)
 
-    const result = [1,3,4,5,2,0].filter((el,i)=> el===newState[i]._id)
+    const result = [1, 3, 4, 5, 2, 0].filter((el, i) => el === newState[i]._id)
 
     expect(result.length).toBe(newState.length)
 })
@@ -41,7 +42,7 @@ test('sort name down', () => {
     // expect(newState[5].name).toBe('Кот')
     // expect(newState[5].age).toBe(3)
 
-    const result = [0,2,5,4,3,1].filter((el,i)=> el===newState[i]._id)
+    const result = [0, 2, 5, 4, 3, 1].filter((el, i) => el === newState[i]._id)
 
     expect(result.length).toBe(newState.length)
 
@@ -56,7 +57,7 @@ test('check age 18', () => {
     // expect(newState[3].name).toBe('Ирина')
     // expect(newState[3].age).toBe(55)
 
-    const result = [1,3,4,5].filter((el,i)=> el===newState[i]._id)
+    const result = [1, 3, 4, 5].filter((el, i) => el === newState[i]._id)
 
     expect(result.length).toBe(newState.length)
 
