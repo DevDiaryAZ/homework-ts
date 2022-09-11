@@ -17,6 +17,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     const mappedOptions: any[] = options ? options.map((el, index)=><option key={index}>{el}</option>) : [];
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
+        onChange && onChange(e) // ЗАЧЕМ??? работает и без этого
         onChangeOption && onChangeOption(e.currentTarget.value)
     }
 
